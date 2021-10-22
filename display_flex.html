@@ -17,6 +17,51 @@
             background-color: aqua;
             margin: 5px;
         }
+
+        .flex_lista {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style: none;
+        }
+
+        .item_flex {
+            background: blue;
+            height: 50px;
+            width: 50px;
+            line-height: 50px;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .row {
+            flex-direction: row;
+        }
+
+        .row_reverse {
+            flex-direction: row-reverse;
+        }            
+
+        .row_reverse li{
+            background-color: red;
+        }        
+
+        .col {
+            float: left;
+            flex-direction: column;
+        }
+        
+        .col_reverse {
+            float: right;
+            flex-direction: column-reverse;
+        }
+
+        .col_reverse li{
+            background-color: red;
+        }                
+
     </style>
 </head>
 <body>
@@ -28,5 +73,40 @@
         <div class="item">teste 2</div>
         <div class="item">teste 3</div>
     </div>
+
+    <ul class="flex_lista row" >
+        <li class="item_flex">1</li>
+        <li class="item_flex">2</li>
+        <li class="item_flex">3</li>
+        <li class="item_flex">4</li>
+        <li class="item_flex">5</li>
+    </ul>
+
+    <ul class="flex_lista row_reverse" >
+        <li class="item_flex">1</li>
+        <li class="item_flex">2</li>
+        <li class="item_flex">3</li>
+        <li class="item_flex">4</li>
+        <li class="item_flex">5</li>
+    </ul>
+
+    <ul class="flex_lista col" >
+        <li class="item_flex">1</li>
+        <li class="item_flex">2</li>
+        <li class="item_flex">3</li>
+        <li class="item_flex">4</li>
+        <li class="item_flex">5</li>
+    </ul>
+
+    <ul class="flex_lista col_reverse" >
+        <li class="item_flex">1</li>
+        <li class="item_flex">2</li>
+        <li class="item_flex">3</li>
+        <li class="item_flex">4</li>
+        <li class="item_flex">5</li>
+    </ul>    
+
+
 </body>
+
 </html>
