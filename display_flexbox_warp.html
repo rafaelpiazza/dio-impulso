@@ -4,15 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>warp</title>
+    <title>fundamentos flexbox - warp</title>
 
     <style>
-        
+        body {
+            background-color: cadetblue;
+        }
+
+
+        .flex-container {
+            display: flex;
+            height: 150px;
+            border: 2px solid black;
+            max-width: 300px;
+        }
+
+        .item {
+            font-size: 24px;
+            height: 50%;
+            text-align: center;
+            width: 100px;
+            min-width: 100px;
+            line-height: 50px;
+
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .oragen {
+            background-color: orange;
+        }
+
+        .brown {
+            background-color: brown;
+        }
+
+
+        .nowarp {
+            flex-wrap: nowrap;
+        }
+
+        .warp {
+            flex-wrap: wrap;
+        }
+
+        .warp-reverse {
+            flex-wrap: wrap-reverse;
+        }
     </style>
 
 
 </head>
 <body>
-    
+    <h1>no warp</h1>
+
+    <div class="flex-container nowarp">
+        <div class="item blue">1</div>
+        <div class="item green">2</div>
+        <div class="item oragen">3</div>
+        <div class="item brown">4</div>
+    </div>
+
+    <h1>warp</h1>
+
+    <div class="flex-container warp">
+        <div class="item blue">1</div>
+        <div class="item green">2</div>
+        <div class="item oragen">3</div>
+        <div class="item brown">4</div>
+    </div>
+
+    <h1>warp-reverse</h1>
+
+    <div class="flex-container warp-reverse">
+        <div class="item blue">1</div>
+        <div class="item green">2</div>
+        <div class="item oragen">3</div>
+        <div class="item brown">4</div>
+    </div>
+
 </body>
 </html>
